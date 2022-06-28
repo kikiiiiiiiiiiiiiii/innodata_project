@@ -1,7 +1,7 @@
 # jiangren_project
 
 ### 1. Draw an ER model for the 5 five tables created in Athena. 
-<img width="882" alt="re model" src="https://user-images.githubusercontent.com/70564580/176154311-0aa147fa-32a3-4adf-9a0d-786530c979e8.png">
+<img width="901" alt="Screen Shot 2022-06-28 at 8 41 10 pm" src="https://user-images.githubusercontent.com/70564580/176159860-80bcd447-4fcd-4db0-b18f-666f20ca5442.png">
 
 ### 2. Design a query to join orders table and order_products table together, filter on eval_set = ‘prior’
 ```
