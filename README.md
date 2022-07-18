@@ -11,7 +11,7 @@ left join order_products as t2
 on t1.order_id = t2.order_id;
 ```
 
-## Part2 Athena queries
+## Part2 Athena Queries
 ### 1. Create a table called order_products_prior by using the last SQL query you created from the previous assignment. It should be similar to below (note you need to replace the s3 bucket name “imba” to yours own bucket name):
 ```sql
 CREATE TABLE order_products_prior WITH (external_location = 's3://imba-ming3/features/order_products_prior/', format = 'parquet')
