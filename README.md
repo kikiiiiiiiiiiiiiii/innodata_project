@@ -54,3 +54,16 @@ group by user_id, product_id;
 ```
 
 ### 5. Create a SQL query (prd_features). Based on table order_products_prior, first write a sql query to calculate the sequence of product purchase for each user, and name it product_seq_time (For example, if a user first time purchase a product A, mark it as 1. If it’s the second time a user purchases a product A, mark it as 2). Below are some examples:
+```sql
+select product_id,
+count(*) as prod_orders,
+sum(reordered) as prod_reorders,
+sum(case when product_seq_time = 1 then 1 else 0 end) as prod_first_orders, 
+sum(case when product_seq_time = 2 then 1 else 0 end) as prod_second_orders
+from(select *, rank()
+over(
+partition by user_id, product_id
+order by order_number) as product_seq_time
+from order_products_prior)
+group by product_id;
+```
