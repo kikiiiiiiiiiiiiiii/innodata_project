@@ -1,7 +1,7 @@
 # Innodata_project
 ## Part1 
 ### 1. Draw an ER model for the 5 five tables created in Athena. 
-<img width="901" alt="Screen Shot 2022-06-28 at 8 41 10 pm" src="https://user-images.githubusercontent.com/70564580/176159860-80bcd447-4fcd-4db0-b18f-666f20ca5442.png">
+<img width="851" alt="er" src="https://user-images.githubusercontent.com/70564580/179433019-c55933fc-b0ba-4eda-ba09-afc64acc15d7.png">
 
 ### 2. Design a query to join orders table and order_products table together, filter on eval_set = ‘prior’
 ```sql
