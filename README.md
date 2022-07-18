@@ -67,3 +67,4 @@ order by order_number) as product_seq_time
 from order_products_prior)
 group by product_id;
 ```
+> partition by user_id, product_id会细分到每个user_id的每个product_id
